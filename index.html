@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">Please fill out the following details.</p>
+    <form action="" id="survey-form">
+        
+        <label for="name" id="name-label">
+            Enter your name:
+            <input type="text" name="name" id="name" placeholder="John Doe" required>
+        </label>
+
+
+        <label for="email" id="email-label">
+            Enter your email:
+            <input type="email" name="email" id="email" placeholder="johndoe@example.com" required>
+        </label>
+
+        <label for="number" id="number-label">
+            Enter your age:
+            <input type="number" name="number" id="number" placeholder="--" min=18 max=120 required>
+        </label>
+        
+        
+        <label id="select-label">
+            Select your department
+            <select id="dropdown">
+                <option value="">department</option>
+                <option value="1">Artificial Intelligence & Data Science</option>
+                <option value="2">Cvil Engineering</option>
+                <option value="3">Computer Science and Engineering</option>
+                <option value="4">Electronics and Electrical Engineering</option>
+                <option value="5">Electronics and Communication Engineering</option>
+                <option value="6">Agricultural Engineering</option>
+                <option value="7">Information Technology (B.Tech)</option>
+                <option value="8">Mechanical Engineering</option>
+            </select>
+        </label>
+<fieldset>
+        <legend> Residency status </legend>
+            <input type="radio" name="residence" value="day-scholar" checked> Day Scholar
+            <input type="radio" name="residence" value="hosteler"> Hosteler
+</fieldset>        
+        <label>
+            Type your Home/Resedential address:
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter Here"></textarea>
+        </label>
+
+
+        <input type="checkbox" value="acknowledge" required> All details given in the form are accurate.<br/>
+        <input type="checkbox" name="" id="" value="declare" required>I acknowledge the  <a href="">Terms and Conditions</a> <br>
+        <button id="submit">Submit</button>
+
+    </form>
+</body>
+</html>
